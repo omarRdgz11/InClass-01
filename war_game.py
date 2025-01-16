@@ -22,8 +22,9 @@ class Card:
             self.suit = the_suit
         else:
             #print("Illegal card value, creating a 2 of Clubs")
+	    #CHANGE FIVE: Made "illegal card" message lowercase
             self.face = -1
-            self.suit = "ILLEGAL CARD"
+            self.suit = "illegal card"
 
     # Retuns the suit value of the calling card
     def get_suit(self):
