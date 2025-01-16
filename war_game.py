@@ -74,10 +74,11 @@ class Deck:
 
     # Returns the top card of the deck if it exists (if we have not previously dealt 52 cards)
     # We could add in a method to automatically shuffle the deck if we reach this point
+    # CHANGE TWO: Counter adds 10 points instead of 1
     def deal(self):
         if self.counter < 52:
             result = self.deck[self.counter]
-            self.counter += 1
+            self.counter += 10
             return result
 
     # Randomly shuffles the deck array seven times.
