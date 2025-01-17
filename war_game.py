@@ -22,8 +22,15 @@ class Card:
             self.suit = the_suit
         else:
             #print("Illegal card value, creating a 2 of Clubs")
+# <<<<<<< Change-Six
+	    #CHANGE SIX: Made message follow proper capitalization rules
             self.face = -1
-            self.suit = "ILLEGAL CARD"
+            self.suit = "Illegal Card"
+=======
+# 	    #CHANGE FIVE: Made "illegal card" message lowercase
+#             self.face = -1
+#             self.suit = "illegal card"
+# >>>>>>> main
 
     # Retuns the suit value of the calling card
     def get_suit(self):
@@ -74,9 +81,13 @@ class Deck:
 
     # Returns the top card of the deck if it exists (if we have not previously dealt 52 cards)
     # We could add in a method to automatically shuffle the deck if we reach this point
+# <<<<<<< Change-Four
     # CHANGE FOUR: Counter increased to 10
+# =======
+    # CHANGE THREE: Counter less than or equal to 52
+# >>>>>>> main
     def deal(self):
-        if self.counter < 52:
+        if self.counter <= 52:
             result = self.deck[self.counter]
             self.counter += 10
             return result
