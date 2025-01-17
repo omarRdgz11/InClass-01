@@ -81,8 +81,9 @@ class Deck:
 
     # Returns the top card of the deck if it exists (if we have not previously dealt 52 cards)
     # We could add in a method to automatically shuffle the deck if we reach this point
+    # CHANGE THREE: Counter less than or equal to 52
     def deal(self):
-        if self.counter < 52:
+        if self.counter <= 52:
             result = self.deck[self.counter]
             self.counter += 1
             return result
